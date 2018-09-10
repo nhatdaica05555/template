@@ -9,7 +9,7 @@ Step 1 : Clone
 Step 2: 
 
 # npm i
-
+# npm i -g gulp-cli
 
 Step 3
 
