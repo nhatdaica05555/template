@@ -1,11 +1,49 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: blue;
-@import '_variable';
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
+.container {
+    max-width: 1000px;
+    margin: auto;
+  
 }
 
-h1{
-  color: red;
+li > a{
+   display: block;
 }
+
+a{
+    color:#555;
+    padding: 20px 0;
+}
+
+li{
+    padding: 0px 20px;
+}
+
+.navbar ul{
+    display: flex;
+    li>a{
+        position: relative;
+    }
+    > li>a::after {
+        content: '';
+        position: absolute;
+        
+        bottom: 0;
+        left: 0;
+        height: 2px;
+       
+        background: red;
+        transition: all 0.3s;
+        width: 0;
+    }
+}
+
+.navbar ul li:hover a::after{
+    width: 100%;
+}
+
+.navbar ul li:not(:hover) a::after{
+    right: 0;
+    left: auto;
+}
+
+
+
