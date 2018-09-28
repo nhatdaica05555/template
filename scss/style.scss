@@ -47,3 +47,11 @@ li{
 
 
 
+.list span::after{
+    content: '/';
+}
+
+
+.list span:last-child::after{
+    content: '';
+}

@@ -32,3 +32,9 @@ li {
 .navbar ul li:not(:hover) a::after {
   right: 0;
   left: auto; }
+
+.list span::after {
+  content: '/'; }
+
+.list span:last-child::after {
+  content: ''; }
